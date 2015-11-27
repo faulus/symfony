@@ -1,0 +1,210 @@
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xx  CSS Table Gallery                               xx
+xx  Poetry for Browser                              xx
+xx  not for 'browsing with the operating system' :o xx
+xx  Author: Monika Thon-Soun                        xx
+xx  URL: http://www.webdesign-in.de/                xx
+xx  Country: Austria                                xx
+xx  Date: 2006-01-14                                xx
+xx  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+table {
+	font-size:0.8em;
+	font-family:Georgia,"Gill Sans MT", "Gill sans", "Trebuchet ms", sans-serif;
+	line-height:1.4em;
+	color: #5B0006;
+	background-color:#FFEDEF;
+	width:100%;
+	border-collapse:collapse;
+}
+caption{
+	color:#F8EFF0;
+	background-color:inherit;
+	font-size:25px;
+	background-image:url(poetryforbrowser/caption.jpg);
+	background-repeat:repeat-x;
+	background-position:0 0;
+	padding:28px 10px 7px 5px;
+	text-align:right;
+}
+tfoot th,
+tfoot td {
+	color:#F8EFF0;
+	background-color:inherit;
+	font-size:25px;
+	background-image:url(poetryforbrowser/tfoot.jpg);
+	background-repeat:repeat-x;
+	background-position:0 -2px;
+}
+tfoot{text-align:right;}
+tfoot td{padding:7px 10px 28px 5px;}
+tfoot th{padding:7px 2px 28px 2px;}
+
+thead th,
+tbody th {
+	background-color:#FAE5E7;
+	color: #5B0006;
+	padding:7px;
+	text-align:left;
+}
+tbody tr:hover,
+tbody tr th:hover{
+    background-color:#FDF9F9;
+    color:#000;
+}
+td{padding:7px;}
+
+thead th{border-bottom:1px dotted  #908F8B;}
+thead th:first-child{border:none;}
+tbody th{border-right:1px dotted #908F8B;}
+
+table a {
+	width:100%;
+	display:block;
+	color: #5B0006;
+	background-color:inherit;
+	line-height:1.5em;
+}
+table a:visited {
+	color: #908F8B;
+	background-color:inherit;
+}
+tbody td+td+td+td a:before{
+	 content:"\21D3";
+	 text-align:right;
+}
+table a:hover {
+	color: #C9020F;
+	background-color:inherit;
+}
+
+.myButton2 {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+	background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+	background-color:#d0451b;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+	background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+	background-color:#bc3315;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	-webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #344452));
+	background:-moz-linear-gradient(top, #2dabf9 5%, #344452 100%);
+	background:-webkit-linear-gradient(top, #2dabf9 5%, #344452 100%);
+	background:-o-linear-gradient(top, #2dabf9 5%, #344452 100%);
+	background:-ms-linear-gradient(top, #2dabf9 5%, #344452 100%);
+	background:linear-gradient(to bottom, #2dabf9 5%, #344452 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#344452',GradientType=0);
+	background-color:#2dabf9;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #617545;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #344452), color-stop(1, #2dabf9));
+	background:-moz-linear-gradient(top, #344452 5%, #2dabf9 100%);
+	background:-webkit-linear-gradient(top, #344452 5%, #2dabf9 100%);
+	background:-o-linear-gradient(top, #344452 5%, #2dabf9 100%);
+	background:-ms-linear-gradient(top, #344452 5%, #2dabf9 100%);
+	background:linear-gradient(to bottom, #344452 5%, #2dabf9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#344452', endColorstr='#2dabf9',GradientType=0);
+	background-color:#344452;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.myButtona {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f0c911), color-stop(1, #f2ab1e));
+	background:-moz-linear-gradient(top, #f0c911 5%, #f2ab1e 100%);
+	background:-webkit-linear-gradient(top, #f0c911 5%, #f2ab1e 100%);
+	background:-o-linear-gradient(top, #f0c911 5%, #f2ab1e 100%);
+	background:-ms-linear-gradient(top, #f0c911 5%, #f2ab1e 100%);
+	background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0c911', endColorstr='#f2ab1e',GradientType=0);
+	background-color:#f0c911;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #e65f44;
+	display:inline-block;
+	cursor:pointer;
+	color:#c92200;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ded17c;
+}
+.myButtona:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2ab1e), color-stop(1, #f0c911));
+	background:-moz-linear-gradient(top, #f2ab1e 5%, #f0c911 100%);
+	background:-webkit-linear-gradient(top, #f2ab1e 5%, #f0c911 100%);
+	background:-o-linear-gradient(top, #f2ab1e 5%, #f0c911 100%);
+	background:-ms-linear-gradient(top, #f2ab1e 5%, #f0c911 100%);
+	background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2ab1e', endColorstr='#f0c911',GradientType=0);
+	background-color:#f2ab1e;
+}
+.myButtona:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+/*Code is Poetry.
+Internet Explorer you cannot show us arrows and hover effects.
+You cannot show us correct borders.
+It looks like that you cannot understand poetry.
+Don't be jealous of browsers. It is simply:Learn to be a browser and
+everything is going to be alright.*/

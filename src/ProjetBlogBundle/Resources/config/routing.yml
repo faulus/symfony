@@ -1,0 +1,35 @@
+projet_blog_post:
+    resource: "@ProjetBlogBundle/Resources/config/routing/post.yml"
+    prefix:   /
+
+ProjetBlogBundle_homepage:
+    pattern:  /
+    defaults: { _controller: ProjetBlogBundle:Page:index }
+    requirements:
+        _method:  GET
+
+ProjetBlogBundle_about:
+    pattern:  /about
+    defaults: { _controller: ProjetBlogBundle:Page:about }
+    requirements:
+        _method:  GET
+
+ProjetBlogBundle_contact:
+    pattern:  /contact
+    defaults: { _controller: ProjetBlogBundle:Page:contact }
+    requirements:
+        _method:  GET|POST
+
+ProjetBlogBundle_blog_show:
+    pattern:  /{id}
+    defaults: { _controller: ProjetBlogBundle:Blog:show }
+    requirements:
+        _method:  GET
+        id: \d+
+
+ProjetBlogBundle_connexion:
+    pattern: /connexion
+    defaults: {_controller: ProjetBlogBundle:Page:connexion}
+
+
+
